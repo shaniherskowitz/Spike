@@ -1,0 +1,6 @@
+framework module Pods_Walki_DogTests {
+  umbrella header "Pods-Walki DogTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

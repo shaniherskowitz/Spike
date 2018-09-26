@@ -11,13 +11,27 @@ import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var tapToChange: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
+    var imagePicker:UIImagePickerController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(imageTap)
+        imageView.layer.cornerRadius = imageView.bounds.height / 2
+        imageView.clipsToBounds = true
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
     }
     @IBAction func signup(_ sender: Any) {
         guard let username = self.username?.text else {return}
@@ -47,6 +61,11 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    @objc func openImagePicker(_ sender:Any) {
+        // Open Image Picker
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -58,4 +77,19 @@ class SignUpViewController: UIViewController {
     }
     */
 
+}
+
+extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            self.profileImage.image = pickedImage
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
 }

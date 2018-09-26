@@ -42,7 +42,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIk-SJ-qNk">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIk-SJ-qNk" customClass="RoundedButton" customModule="Walki_Dog" customModuleProvider="target">
                                         <rect key="frame" x="61.5" y="170" width="97" height="40"/>
                                         <color key="backgroundColor" red="0.92273744390000001" green="0.99028072359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -54,6 +54,11 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GDV-fj-w4R"/>
                                         </connections>
@@ -152,7 +157,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdS-k6-BYg" customClass="GradientView" customModule="Walki_Dog" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOV-7X-Qos">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOV-7X-Qos" customClass="RoundedButton" customModule="Walki_Dog" customModuleProvider="target">
                                         <rect key="frame" x="95" y="211" width="185" height="40"/>
                                         <color key="backgroundColor" red="0.92273744394944091" green="0.99028072357240327" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -164,12 +169,17 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="doLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kov-BS-DsF"/>
                                             <segue destination="BYZ-38-t0r" kind="show" id="uvu-VL-JdL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmy-Qf-x8X">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmy-Qf-x8X" customClass="RoundedButton" customModule="Walki_Dog" customModuleProvider="target">
                                         <rect key="frame" x="95" y="284" width="185" height="40"/>
                                         <color key="backgroundColor" red="0.92273744390000001" green="0.99028072359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -180,6 +190,11 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="YcU-jh-Gch" kind="show" id="RVZ-5c-jFy"/>
                                         </connections>
@@ -187,12 +202,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="BOV-7X-Qos" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JdS-k6-BYg" secondAttribute="leading" constant="95" id="6rx-sn-yrC"/>
+                                    <constraint firstItem="qmy-Qf-x8X" firstAttribute="centerX" secondItem="JdS-k6-BYg" secondAttribute="centerX" id="3gi-Wh-q2u"/>
                                     <constraint firstItem="qmy-Qf-x8X" firstAttribute="top" secondItem="BOV-7X-Qos" secondAttribute="bottom" constant="33" id="Sd5-9u-9dY"/>
-                                    <constraint firstItem="qmy-Qf-x8X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JdS-k6-BYg" secondAttribute="leading" constant="95" id="ftq-8W-M2v"/>
+                                    <constraint firstItem="qmy-Qf-x8X" firstAttribute="leading" secondItem="BOV-7X-Qos" secondAttribute="leading" id="eg8-yG-ura"/>
                                     <constraint firstItem="BOV-7X-Qos" firstAttribute="top" secondItem="JdS-k6-BYg" secondAttribute="top" constant="211" id="iVZ-MR-hW6"/>
-                                    <constraint firstAttribute="trailing" secondItem="BOV-7X-Qos" secondAttribute="trailing" constant="95" id="j5Y-C8-NMU"/>
-                                    <constraint firstAttribute="trailing" secondItem="qmy-Qf-x8X" secondAttribute="trailing" constant="95" id="nd2-bY-y0D"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BOV-7X-Qos" secondAttribute="trailing" constant="20" symbolic="YES" id="sLM-3s-7x5"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
@@ -231,7 +245,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hlF-G0-96y">
-                                <rect key="frame" x="78" y="186" width="219" height="208"/>
+                                <rect key="frame" x="78" y="263" width="219" height="208"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1e9-ZL-zxJ">
                                         <rect key="frame" x="0.0" y="0.0" width="219" height="52"/>
@@ -265,33 +279,64 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wa-YW-QWq">
-                                <rect key="frame" x="134" y="432" width="106" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wa-YW-QWq" customClass="RoundedButton" customModule="Walki_Dog" customModuleProvider="target">
+                                <rect key="frame" x="134" y="497" width="106" height="38"/>
                                 <color key="backgroundColor" red="0.92273744390000001" green="0.99028072359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Fgv-Te-e7P"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="106" id="cod-Ry-X05"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" red="0.16028249089999999" green="0.52679818519999999" blue="0.84993926980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signup:" destination="YcU-jh-Gch" eventType="touchUpInside" id="FAN-hx-dEc"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="tz3-Wb-rjB">
+                                <rect key="frame" x="140" y="109" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="GTK-WG-zg8"/>
+                                    <constraint firstAttribute="width" constant="95" id="RaI-BM-1cq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCa-jw-8hO">
+                                <rect key="frame" x="140" y="212" width="95" height="30"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                <state key="normal" title="Tap to Change">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70588235294117652" green="0.92156862745098034" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7Wa-YW-QWq" firstAttribute="top" secondItem="hlF-G0-96y" secondAttribute="bottom" constant="38" id="0Nc-Zl-ucB"/>
-                            <constraint firstItem="hlF-G0-96y" firstAttribute="top" secondItem="naR-t5-KtU" secondAttribute="top" constant="122" id="2oZ-2b-mc1"/>
-                            <constraint firstItem="naR-t5-KtU" firstAttribute="trailing" secondItem="hlF-G0-96y" secondAttribute="trailing" constant="78" id="BbV-eX-E1f"/>
-                            <constraint firstItem="hlF-G0-96y" firstAttribute="leading" secondItem="naR-t5-KtU" secondAttribute="leading" constant="78" id="Nq7-Li-kfW"/>
-                            <constraint firstItem="naR-t5-KtU" firstAttribute="bottom" secondItem="7Wa-YW-QWq" secondAttribute="bottom" constant="197" id="gLO-LU-ERT"/>
-                            <constraint firstItem="naR-t5-KtU" firstAttribute="trailing" secondItem="7Wa-YW-QWq" secondAttribute="trailing" constant="135" id="hgd-Q7-Rfz"/>
-                            <constraint firstItem="7Wa-YW-QWq" firstAttribute="leading" secondItem="naR-t5-KtU" secondAttribute="leading" constant="134" id="zpq-ty-QdK"/>
+                            <constraint firstItem="7Wa-YW-QWq" firstAttribute="top" secondItem="hlF-G0-96y" secondAttribute="bottom" constant="26" id="55G-bu-reT"/>
+                            <constraint firstItem="PCa-jw-8hO" firstAttribute="leading" secondItem="tz3-Wb-rjB" secondAttribute="leading" id="CAx-WJ-c3T"/>
+                            <constraint firstItem="naR-t5-KtU" firstAttribute="trailing" secondItem="hlF-G0-96y" secondAttribute="trailing" constant="78" id="D1f-QI-xTr"/>
+                            <constraint firstItem="PCa-jw-8hO" firstAttribute="top" secondItem="tz3-Wb-rjB" secondAttribute="bottom" constant="8" symbolic="YES" id="EBK-IE-HOv"/>
+                            <constraint firstItem="7Wa-YW-QWq" firstAttribute="leading" secondItem="naR-t5-KtU" secondAttribute="leading" constant="134" id="G7w-VF-W1w"/>
+                            <constraint firstItem="hlF-G0-96y" firstAttribute="leading" secondItem="naR-t5-KtU" secondAttribute="leading" constant="78" id="OLg-8f-yF0"/>
+                            <constraint firstItem="7Wa-YW-QWq" firstAttribute="top" secondItem="hlF-G0-96y" secondAttribute="bottom" constant="26" id="RoT-Rb-aGJ"/>
+                            <constraint firstItem="hlF-G0-96y" firstAttribute="top" secondItem="PCa-jw-8hO" secondAttribute="bottom" constant="21" id="VoU-QJ-qBQ"/>
+                            <constraint firstItem="tz3-Wb-rjB" firstAttribute="top" secondItem="naR-t5-KtU" secondAttribute="top" constant="45" id="Vt7-6r-mHf"/>
+                            <constraint firstItem="PCa-jw-8hO" firstAttribute="centerX" secondItem="hlF-G0-96y" secondAttribute="centerX" id="m10-j4-Bl9"/>
+                            <constraint firstItem="naR-t5-KtU" firstAttribute="trailing" secondItem="7Wa-YW-QWq" secondAttribute="trailing" constant="135" id="tQL-v7-3s9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="naR-t5-KtU"/>
                     </view>
                     <connections>
                         <outlet property="email" destination="rfY-SN-ctr" id="5bq-wV-AT8"/>
+                        <outlet property="imageView" destination="tz3-Wb-rjB" id="0mL-tG-vwy"/>
                         <outlet property="password" destination="Vhm-Yi-lDb" id="K9d-Qx-oDd"/>
+                        <outlet property="profileImage" destination="tz3-Wb-rjB" id="yix-CZ-lIb"/>
+                        <outlet property="tapToChange" destination="PCa-jw-8hO" id="vE6-HZ-0hu"/>
                         <outlet property="username" destination="1e9-ZL-zxJ" id="6nj-Bf-bCe"/>
                     </connections>
                 </viewController>
@@ -302,7 +347,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hkx-WK-50E">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenKeyboardAppears="YES" id="a2d-Lo-Iii" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a2d-Lo-Iii" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UQZ-Im-fZW">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -321,5 +366,8 @@
             <point key="canvasLocation" x="-39" y="141"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="user" width="409.60000610351562" height="409.60000610351562"/>
+    </resources>
     <color key="tintColor" red="0.1602824908808281" green="0.52679818516129395" blue="0.84993926980690748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

@@ -10,6 +10,7 @@
 		12DC02A6BF1149BEE577939D /* Pods_Walki_DogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0245EEEA9478FBEE452FB06E /* Pods_Walki_DogTests.framework */; };
 		9C281A123DA53E7315F8098E /* Pods_Walki_Dog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CADD1D5170BF60C21AF0BD /* Pods_Walki_Dog.framework */; };
 		F3239DF0215A6D2400DEA782 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3239DEF215A6D2400DEA782 /* HomeViewController.swift */; };
+		F3239DF2215AAEA900DEA782 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3239DF1215AAEA900DEA782 /* RoundedButton.swift */; };
 		F3A9DE192157D143005FAB71 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A9DE182157D143005FAB71 /* SignUpViewController.swift */; };
 		F3A9DE1B2157D168005FAB71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A9DE1A2157D168005FAB71 /* LoginViewController.swift */; };
 		F3F2EC412153D1DC0013F1DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F2EC402153D1DC0013F1DF /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 		A8308E845240B8B3377DDA28 /* Pods-Walki Dog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walki Dog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Walki Dog/Pods-Walki Dog.release.xcconfig"; sourceTree = "<group>"; };
 		F0CADD1D5170BF60C21AF0BD /* Pods_Walki_Dog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walki_Dog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3239DEF215A6D2400DEA782 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3239DF1215AAEA900DEA782 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		F3A9DE182157D143005FAB71 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F3A9DE1A2157D168005FAB71 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F3F2EC3D2153D1DC0013F1DF /* Walki Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walki Dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				F3A9DE1A2157D168005FAB71 /* LoginViewController.swift */,
 				F3239DEF215A6D2400DEA782 /* HomeViewController.swift */,
 				F3F2EC6021579FFE0013F1DF /* GradientView.swift */,
+				F3239DF1215AAEA900DEA782 /* RoundedButton.swift */,
 				F3F2EC442153D1DC0013F1DF /* Main.storyboard */,
 				F3F2EC472153D1DE0013F1DF /* Assets.xcassets */,
 				F3F2EC492153D1DE0013F1DF /* LaunchScreen.storyboard */,
@@ -279,6 +282,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Walki Dog/Pods-Walki Dog-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -287,6 +291,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +332,7 @@
 				F3F2EC412153D1DC0013F1DF /* AppDelegate.swift in Sources */,
 				F3A9DE192157D143005FAB71 /* SignUpViewController.swift in Sources */,
 				F3A9DE1B2157D168005FAB71 /* LoginViewController.swift in Sources */,
+				F3239DF2215AAEA900DEA782 /* RoundedButton.swift in Sources */,
 				F3F2EC6121579FFE0013F1DF /* GradientView.swift in Sources */,
 				F3239DF0215A6D2400DEA782 /* HomeViewController.swift in Sources */,
 			);

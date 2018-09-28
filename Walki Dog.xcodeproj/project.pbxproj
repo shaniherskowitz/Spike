@@ -99,6 +99,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F3239DF7215E639500DEA782 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3F2EC422153D1DC0013F1DF /* ViewController.swift */,
+				F3A9DE182157D143005FAB71 /* SignUpViewController.swift */,
+				F3A9DE1A2157D168005FAB71 /* LoginViewController.swift */,
+				F3239DEF215A6D2400DEA782 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F3239DF8215E63B800DEA782 /* Add Ons */ = {
+			isa = PBXGroup;
+			children = (
+				F3F2EC6021579FFE0013F1DF /* GradientView.swift */,
+				F3239DF1215AAEA900DEA782 /* RoundedButton.swift */,
+			);
+			path = "Add Ons";
+			sourceTree = "<group>";
+		};
 		F3F2EC342153D1DC0013F1DF = {
 			isa = PBXGroup;
 			children = (
@@ -123,12 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				F3F2EC402153D1DC0013F1DF /* AppDelegate.swift */,
-				F3F2EC422153D1DC0013F1DF /* ViewController.swift */,
-				F3A9DE182157D143005FAB71 /* SignUpViewController.swift */,
-				F3A9DE1A2157D168005FAB71 /* LoginViewController.swift */,
-				F3239DEF215A6D2400DEA782 /* HomeViewController.swift */,
-				F3F2EC6021579FFE0013F1DF /* GradientView.swift */,
-				F3239DF1215AAEA900DEA782 /* RoundedButton.swift */,
+				F3239DF7215E639500DEA782 /* Controllers */,
+				F3239DF8215E63B800DEA782 /* Add Ons */,
 				F3F2EC442153D1DC0013F1DF /* Main.storyboard */,
 				F3F2EC472153D1DE0013F1DF /* Assets.xcassets */,
 				F3F2EC492153D1DE0013F1DF /* LaunchScreen.storyboard */,
